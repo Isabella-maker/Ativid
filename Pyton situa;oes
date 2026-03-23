@@ -1,0 +1,91 @@
+#include <stdio.h>
+
+int main() {
+    int total, i, voto;
+    int votos1 = 0, votos2 = 0, votos3 = 0;
+
+    printf("Quantas pessoas vao votar? ");
+    scanf("%d", &total);
+
+    for(i = 0; i < total; i++) {
+        while(1) {
+            printf("Pessoa %d, vote (1, 2 ou 3): ", i + 1);
+            scanf("%d", &voto);
+
+            if(voto == 1) {#include <stdio.h>
+
+int main() {
+    int total, i, voto;
+    int votos1 = 0, votos2 = 0, votos3 = 0;
+
+    printf("Quantas pessoas vao votar? ");
+    scanf("%d", &total);
+
+    for(i = 0; i < total; i++) {
+        while(1) {
+            printf("Pessoa %d, vote (1, 2 ou 3): ", i + 1);
+            scanf("%d", &voto);
+
+            if(voto == 1) {
+                votos1++;
+                break;
+            } else if(voto == 2) {
+                votos2++;
+                break;
+            } else if(voto == 3) {
+                votos3++;
+                break;
+            } else {
+                printf("Voto invalido! Tente novamente.\n");
+            }
+        }
+    }
+
+    printf("\nResultado da votacao:\n");
+    printf("Candidato 1: %d\n", votos1);
+    printf("Candidato 2: %d\n", votos2);
+    printf("Candidato 3: %d\n", votos3);
+
+    if(votos1 > votos2 && votos1 > votos3) {
+        printf("Vencedor: Candidato 1\n");
+    } else if(votos2 > votos1 && votos2 > votos3) {
+        printf("Vencedor: Candidato 2\n");
+    } else if(votos3 > votos1 && votos3 > votos2) {
+        printf("Vencedor: Candidato 3\n");
+    } else {
+        printf("Empate!\n");
+    }
+
+    return 0;
+}
+                votos1++;
+                break;
+            } else if(voto == 2) {
+                votos2++;
+                break;
+            } else if(voto == 3) {
+                votos3++;
+                break;
+            } else {
+                printf("Voto invalido! Tente novamente.\n");
+            }
+        }
+    }
+
+    printf("\nResultado da votacao:\n");
+    printf("Candidato 1: %d\n", votos1);
+    printf("Candidato 2: %d\n", votos2);
+    printf("Candidato 3: %d\n", votos3);
+
+    if(votos1 > votos2 && votos1 > votos3) {
+        printf("Vencedor: Candidato 1\n");
+    } else if(votos2 > votos1 && votos2 > votos3) {
+        printf("Vencedor: Candidato 2\n");
+    } else if(votos3 > votos1 && votos3 > votos2) {
+        printf("Vencedor: Candidato 3\n");
+    } else {
+        printf("Empate!\n");
+    }
+
+    return 0;
+}
